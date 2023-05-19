@@ -7,7 +7,7 @@ sudo apt install -y python3-venv
 # 仮想環境の作成と有効化
 read -p "仮想環境の名前を入力してください: " venv_name
 
-python3 -m venv $venv_name
+python3 -m venv $HOME/$venv_name
 source $venv_name/bin/activate
 
 # 仮想環境のエイリアスの設定
