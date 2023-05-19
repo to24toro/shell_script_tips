@@ -7,6 +7,7 @@ sudo apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libns
 # 最新版Pythonのダウンロードとインストール
 version="3.11.2"  # インストールするPythonのバージョンを指定します
 
+cd $HOME
 curl -O https://www.python.org/ftp/python/$version/Python-$version.tgz
 tar -xf Python-$version.tgz
 cd Python-$version
@@ -15,7 +16,7 @@ make -j $(nproc)
 sudo make altinstall
 
 # シンボリックリンクの作成
-sudo ln -s /usr/local/bin/python3.9 /usr/local/bin/python3
+sudo ln -s /usr/local/bin/python3.11 /usr/local/bin/python3
 
 # インストールしたPythonのバージョンを確認
 python3 --version

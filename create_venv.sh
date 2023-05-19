@@ -13,7 +13,7 @@ source $venv_name/bin/activate
 # 仮想環境のエイリアスの設定
 read -p "仮想環境のエイリアス名を入力してください: " alias_name
 
-echo "alias $alias_name='source $PWD/$venv_name/bin/activate'" >> $HOME/.bashrc
+echo "alias $alias_name='source $HOME/$venv_name/bin/activate'" >> $HOME/.bashrc
 source $HOME/.bashrc
 
 echo "仮想環境 $venv_name の作成とエイリアスの設定が完了しました。"
